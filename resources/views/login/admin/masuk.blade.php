@@ -45,8 +45,11 @@
 		            </div>
 		            <div class="form-group">
 		            	<button type="submit" class="mt-3 form-control btn btn-primary submit px-3">Masuk</button>
-						<a href="{{ route('beranda.index') }}" class="mt-3 form-control btn btn-primary submit px-3">Kembali</a>
 		            </div>
+					<div class="form-group d-flex">
+						<a href="{{ route('beranda.index') }}" class="mt-3 form-control btn btn-primary submit px-3">Kembali</a>
+						<a href="{{ route('adminEmail.index') }}" class="mt-3 form-control btn btn-primary submit px-3" style="margin-left: 10px">Lupa Kata Sandi</a>
+					</div>
 		          </form>
 		        </div>
 		      </div>

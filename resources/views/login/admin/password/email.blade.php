@@ -24,14 +24,14 @@
 									<h3 class="mb-4">Lupa Kata Sandi</h3>
 								</div>
 							</div>
-							<form method="POST" action="{{ route('password.email') }}" class="signin-form">
+							<form method="POST" action="{{ route('adminEmail.send') }}" class="signin-form">
 								@csrf
 								<div class="form-group mb-3">
 									<label class="label" for="name">Username</label>
 									<input type="email" name="email" class="form-control" placeholder="Username" required>
 								</div>
 								<div class="form-group d-flex justify-content-center">
-									<a href="{{ route('login') }}" class="w-50 mt-4 form-control btn btn-primary submit">Kembali</a>
+									<a href="{{ route('adminlogin.index') }}" class="w-50 mt-4 form-control btn btn-primary submit">Kembali</a>
 									<button type="submit" class="mt-4 form-control btn btn-primary submit px-3" style="margin-left: 10px">Kirim Alamat Kata Sandi</button>
 								</div>
 							</form>

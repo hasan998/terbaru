@@ -152,7 +152,7 @@
             <div class="carousel-testimony owl-carousel">
               <div class="item">
                 <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-5" style="background-image: url({{ asset('assets/front-end/images/person_1.jpg')}})">
+                  <div class="user-img mb-5" style="background-image: url({{ asset('assets/front-end/images/Daffa.jpg')}})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
@@ -166,7 +166,7 @@
               </div>
               <div class="item">
                 <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-5" style="background-image: url({{ asset('assets/front-end/images/person_2.jpg')}})">
+                  <div class="user-img mb-5" style="background-image: url({{ asset('assets/front-end/images/Dimas.jpg')}})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
@@ -180,14 +180,14 @@
               </div>
               <div class="item">
                 <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-5" style="background-image: url({{ asset('assets/front-end/images/person_3.jpg')}})">
+                  <div class="user-img mb-5" style="background-image: url({{ asset('assets/front-end/images/Hasan.jpg')}})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text text-center">
-                    <p class="mb-5 pl-4 line">Pelayanannya 24 jam wuh keren bgt emg wardise, gratis ongkirnya juga paling mantep</p>
-                    <p class="name">Raffly Ananda Fadila</p>
+                    <p class="mb-5 pl-4 line">Si adik beli rumah, kalau kamu cari yang murah - muarah, mampir saja ke Cafe Wardise</p>
+                    <p class="name">Muhammad Hassanuddin</p>
                     <span class="position">Mahasiswa</span>
                   </div>
                 </div>

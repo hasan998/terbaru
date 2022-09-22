@@ -22,13 +22,21 @@
 							<div class="d-flex text-center">
 								<div class="w-100">
 									<h3 class="mb-4">Atur Ulang Kata Sandi</h3>
+                                    @if (session('fail'))
+                                    <h5 class="label">{{ session('fail') }}</h5>
+                                    @endif
+                                    @if (session('info'))
+                                    <h5 class="label">{{ session('info') }}</h5>
+                                    @endif
 								</div>
 							</div>
-							<form method="POST" action="{{ route('password.update') }}"class="signin-form">
+							<form method="POST" action="{{ route('adminReset.reset') }}"class="signin-form">
 								@csrf
+                                <input type="hidden" name="token" value="{{ $token }}">
 								<div class="form-group mb-3">
-									<input disabled type="hidden" name="email" class="form-control" placeholder="Email" value="{{ $email }}" required>
+									<input type="hidden" name="email" class="form-control" placeholder="Email" value="{{ $email }}" required>
 								</div>
+                               
                                 <div class="form-group mb-3">
 									<label class="label" for="name">Password</label>
 									<input type="password" name="password" class="form-control" placeholder="Password" required>
@@ -38,7 +46,7 @@
 									<input type="password" name="password_confirmation" class="form-control" placeholder="Konfirmasi Password" required>
 								</div>
 								<div class="form-group">
-									<button type="submit" class="mt-4 form-control btn btn-primary submit px-3">Kirim Alamat Kata Sandi</button>
+									<button type="submit" class="mt-4 form-control btn btn-primary submit px-3">Reset Password</button>
 								</div>
 							</form>
 						</div>

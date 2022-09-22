@@ -47,10 +47,7 @@
 								</div>
 								<div class="form-group d-flex justify-content-between">
 									<a href="{{ route('beranda.index') }}" class="form-control btn btn-primary submit">Kembali</a>
-									<!-- <a href="{{ route('password.request') }}" class="form-control btn btn-primary submit">Lupa Password</a> -->
-								</div>
-								<div class="form-group">
-									<a href="{{route('password.request')}}"  class="mt-4 form-control btn btn-primary submit px-3">Lupa Kata Sandi</a>
+									<a href="{{route('password.request')}}" class="form-control btn btn-primary submit px-3" style="margin-left: 10px">Lupa Kata Sandi</a>
 								</div>
 							</form>
 						</div>
