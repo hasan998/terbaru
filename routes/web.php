@@ -39,7 +39,6 @@ Route::middleware('auth')->group(function() {
     Route::post('/produk/{produk_id}/add-to-cart', [UserController::class, 'pesan'])->name('pesan.store');
 });
 
-
 Route::middleware('auth:admin')->group(function () {
     Route::group(['prefix' => 'admin'], function () {
         Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard.index');
@@ -70,7 +69,11 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('login',[LoginAdminController::class,'index'])->name('adminlogin.index');
     Route::post('login',[LoginAdminController::class,'login'])->name('adminlogin.login');
     Route::post('logout', [LoginAdminController::class, 'logout'])->name('admin.logout');
+
+    Route::get('/Password-Forgot', [LoginAdminController::class, 'showLinkRequestForm'])->name('adminEmail.index');
+    Route::post('/Password-Forgot', [LoginAdminController::class, 'sendResetLink'])->name('adminEmail.send');
+    Route::get('/Password-Reset/{token}', [LoginAdminController::class, 'showResetForm'])->name('adminReset.index');
+    Route::post('/Password-Reset', [LoginAdminController::class, 'resetPassword'])->name('adminReset.reset');
 });
-Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
